@@ -15,4 +15,13 @@ jobs:
               run: echo "Hello world"
             - name: Dit au revoir
               run: echo "Goodbye world"
-        # On définit les étapes à réaliser pour ce job
+        
+    # Définition de la seconde action à réaliser
+    second-job:
+        name: Mon second job
+        # On précise le système d'exploitation
+        runs-on: ubuntu-latest
+        # On écrit ici les étapes pour notre action
+        steps:
+            - name: Mon étape
+              run: echo "Je suis un second job !" 
